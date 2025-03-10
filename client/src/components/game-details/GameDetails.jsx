@@ -4,7 +4,9 @@ import gameService from "../../services/gameService.js";
 import CommentsShow from "../comments-show/CommentsShow.jsx";
 import CommentsCreate from "../comments-create/CommentsCreate.jsx";
 
-export default function GameDetails() {
+export default function GameDetails({
+    email,
+}) {
     const navigate = useNavigate();
     const [game, setGame] = useState({});
     const { gameId } = useParams();
@@ -56,7 +58,7 @@ export default function GameDetails() {
                 </div>
             </div>
 
-            <CommentsCreate />
+            <CommentsCreate email={email}/>
 
         </section>
     );
