@@ -22,5 +22,13 @@
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
         "summary": "Counter-Strike (also known as Half-Life: Counter-Strike or Counter-Strike 1.6) is a 2000 tactical first-person shooter game developed by Valve Corporation and published by Sierra Studios. It is the first installment in the Counter-Strike series.",
         "_id": "782e8d60-7971-4f74-aa12-31918982c423"
+    },
+    "bcd0cf49-b85e-4796-aa1f-a3a9492691e4": {
+        "title": "Need for Speed: Underground 2",
+        "category": "Racing",
+        "maxLevel": "100",
+        "imageUrl": "https://assets-prd.ignimgs.com/2022/01/21/need-for-speed-underground-2-button-crop-1642797115202.jpg",
+        "summary": "The game entails tuning cars for street races, resuming the Need for Speed: Underground storyline. Need for Speed: Underground 2 provides several new features, such as broader customization, new methods of selecting races, set in a city known as Bayview. ",
+        "_id": "bcd0cf49-b85e-4796-aa1f-a3a9492691e4"
     }
 }
