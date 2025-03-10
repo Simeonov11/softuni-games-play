@@ -30,5 +30,13 @@
         "imageUrl": "https://assets-prd.ignimgs.com/2022/01/21/need-for-speed-underground-2-button-crop-1642797115202.jpg",
         "summary": "The game entails tuning cars for street races, resuming the Need for Speed: Underground storyline. Need for Speed: Underground 2 provides several new features, such as broader customization, new methods of selecting races, set in a city known as Bayview. ",
         "_id": "bcd0cf49-b85e-4796-aa1f-a3a9492691e4"
+    },
+    "3832f533-a07b-4bfe-bdde-54c173a665b7": {
+        "title": "StarCraft: Brood War",
+        "category": "Strategy",
+        "maxLevel": "99",
+        "imageUrl": "https://www.dvcinquirer.com/wp-content/uploads/2017/03/33850860211_b2c2d06ff9_z.jpg",
+        "summary": "StarCraft: Brood War is the expansion pack for the military science fiction real-time strategy video game StarCraft. Released in December 1998 for Microsoft Windows and June 1999 for Mac OS, it was co-developed by Saffire and Blizzard Entertainment. The expansion pack introduces new campaigns, map tilesets, music, extra units for each race, and upgrade advancements. The campaigns continue the story from where the original StarCraft ended,[4] with the sequel, StarCraft II: Wings of Liberty, continuing from the conclusion of Brood War. The expansion was released first in the United States on December 18, 1998.[1]",
+        "_id": "3832f533-a07b-4bfe-bdde-54c173a665b7"
     }
 }
