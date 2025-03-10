@@ -3,6 +3,12 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/header/header.jsx';
 import Home from './components/home/Home.jsx';
+import Login from './components/login/Login.jsx';
+import GameCatalog from './components/game-catalog/GameCatalog.jsx';
+import Register from './components/register/Register.jsx';
+import GameCreate from './components/game-create/GameCreate.jsx';
+import GameEdit from './components/game-edit/GameEdit.jsx';
+import GameDetails from './components/game-details/GameDetails.jsx';
 
 function App() {
     const [count, setCount] = useState(0)
@@ -14,6 +20,12 @@ function App() {
             <main id="main-content">
                 <Routes>
                     <Route path='/' element={<Home />} />
+                    <Route path='/games' element={<GameCatalog />} />
+                    <Route path='/games/create' element={<GameCreate />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/register' element={<Register />} />
+                    {/* <Route path='/games/edit' element={<GameEdit />} /> */}
+                    {/* <Route path='/games/details' element={<GameDetails />} /> */}
                 </Routes>
                 
             </main>
