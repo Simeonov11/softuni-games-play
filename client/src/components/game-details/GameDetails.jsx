@@ -1,22 +1,20 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
-import gameService from "../../services/gameService.js";
 import CommentsShow from "../comments-show/CommentsShow.jsx";
 import CommentsCreate from "../comments-create/CommentsCreate.jsx";
 import commentService from "../../services/commentService.js";
-import { UserContext } from "../../contexts/userContext.js";
+import { useDeleteGame, useGame } from "../../api/gameApi.js";
+import useAuth from "../../hooks/useAuth.js";
 
 export default function GameDetails({}) {
     const navigate = useNavigate();
-    const { email } = useContext(UserContext);
-    const [game, setGame] = useState({});
+    const { email } = useAuth();
     const [comments, setComments] = useState([]);
     const { gameId } = useParams();
-
+    const { game } = useGame(gameId);
+    const { deleteGame } = useDeleteGame();
+    
     useEffect(() => {
-        gameService.getOne(gameId)
-            .then(setGame);
-
         commentService.getAll(gameId)
             .then(setComments);
     }, [gameId]);
@@ -28,7 +26,7 @@ export default function GameDetails({}) {
            return; 
         }
 
-        await gameService.delete(gameId);
+        await deleteGame(gameId);
 
         navigate('/games');
     };

@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import gameService from "../../services/gameService.js";
 import GameCatalogItem from "./game-catalog-item/GameCatalogItem.jsx";
 import { useGames } from "../../api/gameApi.js";
 
