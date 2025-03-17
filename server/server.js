@@ -1649,7 +1649,60 @@
     			_createdOn: 1616237272948,
     			_updatedOn: 1616237293676
     		}
-    	}
+    	},
+        games: [
+            {
+                "title": "Karate Panda",
+                "category": "Fighting",
+                "maxLevel": "211",
+                "imageUrl": "https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-1035x780.jpg",
+                "summary": "haaaaaa yaaaaa",
+                "_id": "2d4bc2c6-0967-412f-8900-81ac23f8777d",
+                "_createdOn": 1742249324597,
+                "_ownerId": "589850b8-4b7d-43fe-8bd1-c687a2e737d1",
+                "_updatedOn": 1742253895318
+            },
+            {
+                "_ownerId": "589850b8-4b7d-43fe-8bd1-c687a2e737d1",
+                "title": "MK3 Ultimate",
+                "category": "Fighting",
+                "maxLevel": "10",
+                "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Ultimate_MK3.png/220px-Ultimate_MK3.png",
+                "summary": "Ultimate Mortal Kombat 3 (UMK3) is a fighting game in the Mortal Kombat series, originally developed and released by Midway Games to arcades in 1995.",
+                "_createdOn": 1742249478339,
+                "_id": "8ee55a06-1d69-4fb7-858a-1366375d27a4"
+            },
+            {
+                "_ownerId": "589850b8-4b7d-43fe-8bd1-c687a2e737d1",
+                "title": "Counter-Strike 1.6",
+                "category": "FPS",
+                "maxLevel": "201",
+                "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
+                "summary": "Counter-Strike (also known as Half-Life: Counter-Strike or Counter-Strike 1.6) is a 2000 tactical first-person shooter game developed by Valve Corporation and published by Sierra Studios. It is the first installment in the Counter-Strike series.",
+                "_createdOn": 1742249510846,
+                "_id": "608e95c8-7dd6-433d-8178-4138a3ab2693"
+            },
+            {
+                "_ownerId": "589850b8-4b7d-43fe-8bd1-c687a2e737d1",
+                "title": "Need for Speed: Underground 2",
+                "category": "Racing",
+                "maxLevel": "200",
+                "imageUrl": "https://assets-prd.ignimgs.com/2022/01/21/need-for-speed-underground-2-button-crop-1642797115202.jpg",
+                "summary": "The game entails tuning cars for street races, resuming the Need for Speed: Underground storyline. Need for Speed: Underground 2 provides several new features, such as broader customization, new methods of selecting races, set in a city known as Bayview.",
+                "_createdOn": 1742249543344,
+                "_id": "0aa81570-0d85-4eac-9100-025cc3de1f91"
+            },
+            {
+                "_ownerId": "589850b8-4b7d-43fe-8bd1-c687a2e737d1",
+                "title": "StarCraft: Brood War",
+                "category": "Strategy",
+                "maxLevel": "299",
+                "imageUrl": "https://www.dvcinquirer.com/wp-content/uploads/2017/03/33850860211_b2c2d06ff9_z.jpg",
+                "summary": "StarCraft: Brood War is the expansion pack for the military science fiction real-time strategy video game StarCraft. Released in December 1998 for Microsoft Windows and June 1999 for Mac OS, it was co-developed by Saffire and Blizzard Entertainment. The expansion pack introduces new campaigns, map tilesets, music, extra units for each race, and upgrade advancements. The campaigns continue the story from where the original StarCraft ended,[4] with the sequel, StarCraft II: Wings of Liberty, continuing from the conclusion of Brood War. The expansion was released first in the United States on December 18, 1998.",
+                "_createdOn": 1742249585139,
+                "_id": "ae3d96ba-94db-41af-8b15-a7db1102442e"
+            }
+        ]
     };
     var rules$1 = {
     	users: {
