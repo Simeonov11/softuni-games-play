@@ -13,7 +13,7 @@ export const useLogin = () => {
     }
 
     useEffect(() => {
-        const AbortController = abort.current;
+        const AbortController = abortRef.current;
 
         return () => AbortController.abort();
     }, []);
