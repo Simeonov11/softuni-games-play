@@ -1,4 +1,5 @@
 import { useLagestGames } from "../../api/gameApi.js";
+import { Link } from "react-router";
 
 export default function Home() {
     const { latestGames } = useLagestGames();
@@ -27,7 +28,7 @@ export default function Home() {
                             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                         </div>
                         <div className="data-buttons">
-                            <a href={`/games/${game._id}/details`} className="btn details-btn">Details</a>
+                            <Link to={`/games/${game._id}/details`} className="btn details-btn">Details</Link>
                         </div>
                     </div>
                 ))}
