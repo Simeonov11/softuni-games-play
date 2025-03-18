@@ -6,14 +6,14 @@ import commentService from "../../services/commentService.js";
 import { useDeleteGame, useGame } from "../../api/gameApi.js";
 import useAuth from "../../hooks/useAuth.js";
 
-export default function GameDetails({}) {
+export default function GameDetails({ }) {
     const navigate = useNavigate();
-    const { email } = useAuth();
+    const { email, _id: userId } = useAuth();
     const [comments, setComments] = useState([]);
     const { gameId } = useParams();
     const { game } = useGame(gameId);
     const { deleteGame } = useDeleteGame();
-    
+
     useEffect(() => {
         commentService.getAll(gameId)
             .then(setComments);
@@ -23,7 +23,7 @@ export default function GameDetails({}) {
         const hasConfirm = confirm(`Are you sure you want to delete ${game.title} game?`);
 
         if (!hasConfirm) {
-           return; 
+            return;
         }
 
         await deleteGame(gameId);
@@ -34,6 +34,8 @@ export default function GameDetails({}) {
     const commentsCreateHandler = (newComment) => {
         setComments(state => [...state, newComment]);
     }
+
+    const isOwner = userId === game._ownerId;
 
     return (
         <section id="game-details">
@@ -52,19 +54,21 @@ export default function GameDetails({}) {
                 <CommentsShow comments={comments} />
 
                 {/* <!-- Edit/Delete buttons ( Only for creator of this game )  --> */}
-                <div className="buttons">
-                    <Link to={`/games/${gameId}/edit`} className="button">Edit</Link>
-                    <button 
-                        onClick={gameDeleteClickHandler} 
-                        className="button"
-                    >
-                        Delete
-                    </button>
-                </div>
+                {isOwner && (
+                    <div className="buttons">
+                        <Link to={`/games/${gameId}/edit`} className="button">Edit</Link>
+                        <button
+                            onClick={gameDeleteClickHandler}
+                            className="button"
+                        >
+                            Delete
+                        </button>
+                    </div>
+                )}
             </div>
 
-            <CommentsCreate 
-                email={email} 
+            <CommentsCreate
+                email={email}
                 gameId={gameId}
                 onCreate={commentsCreateHandler}
             />
